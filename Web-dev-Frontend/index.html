@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <input type="textarea" id="historyholder">
+    <input type="button" id="history" onclick="history()"> -->
+    <form id="clc">
+        <div id="Calculator">
+          
+            <div id="display">
+                <input type="text" placeholder="" id="display2" min="0" max="0">
+                <input type="text" placeholder="0" id="display"> 
+                
+            <hr id="line"> 
+            </div>
+            <div id="buttons">
+                <div id="row1">
+               
+                    <input type="button" value="AC" id="t1" onclick="allclear()">
+                    <input type="button" value="DEL"id="t2"onclick="deletebtn()">
+                    <input type="button" value=":)" id="t3" onclick="smiley()" >
+                    <input type="button" value="/"id="t4" onclick="sign1()" >
+                   </div>
+        
+                <div id="row2">
+                 <input type="button" value="7" id="t5"  onclick="clrscr();clc.display.value+='7'" >
+                 <input type="button" value="8" id="t6"  onclick="clrscr();clc.display.value+='8'" >
+                 <input type="button" value="9"id="t7"  onclick="clrscr();clc.display.value+='9'" >
+                 <input type="button" value="*"id="t8"  onclick="sign2()" >
+                </div>
+        
+                <div id="row3">
+                    <input type="button" value="4" id="t9"  onclick="clrscr();clc.display.value+='4'" >
+                    <input type="button" value="5" id="t10"  onclick="clrscr();clc.display.value+='5'" >
+                    <input type="button" value="6" id="t11"  onclick="clrscr();clc.display.value+='6'" >
+                    <input type="button" value="+"id="t12"  onclick="sign3()" >
+                   </div>
+        
+                   <div id="row4">
+                    <input type="button" value="1" id="t13"  onclick="clrscr();clc.display.value+='1'" >
+                    <input type="button" value="2" id="t14"  onclick="clrscr();clc.display.value+='2'" >
+                    <input type="button" value="3" id="t15"  onclick="clrscr();clc.display.value+='3'" >
+                    <input type="button" value="-"id="t16"  onclick="sign4()" >
+                   </div>
+        
+                   <div id="row5">
+                    <input type="button" value="00" id="t17" onclick="dblzero()" >
+                    <input type="button" value="0" id="t18"  onclick="zero()" >
+                    <input type="button" value="."id="t19"  onclick="clrscr();clc.display.value+='.'" >
+                    <input type="button" value="=" id="t20"  onclick="store();output()"  >
+                   </div>
+
+            </div>
+           
+          
+        </div>
+        
+    </form>
+</body>
+</html>
